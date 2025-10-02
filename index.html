@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marimar Situmeang - Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .section-bg {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .star-animation {
+            animation: twinkle 2s infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gradient flex items-center">
+                    <i class="fas fa-star star-animation mr-2"></i>
+                    Portofolio
+                </h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-pink-600 transition-colors">Beranda</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-600 transition-colors">Tentang</a>
+                    <a href="#education" class="text-gray-700 hover:text-pink-600 transition-colors">Pendidikan</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-pink-600 transition-colors">Prestasi</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-600 transition-colors">Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-pink-600">Beranda</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-pink-600">Tentang</a>
+                <a href="#education" class="block py-2 text-gray-700 hover:text-pink-600">Pendidikan</a>
+                <a href="#achievements" class="block py-2 text-gray-700 hover:text-pink-600">Prestasi</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-pink-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-white mb-10 lg:mb-0">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+                        Halo, Saya
+                        <span class="block text-yellow-300 flex items-center">
+                            <i class="fas fa-star star-animation mr-3"></i>
+                            Marimar Situmeang
+                        </span>
+                    </h1>
+                    <p class="text-xl mb-8 leading-relaxed">
+                        Mahasiswa Ilmu Komputer di Universitas Negeri Medan yang passionate dalam musik, teknologi, dan pengembangan diri.
+                    </p>
+                    <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6 mb-8">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-quote-left mr-3 text-yellow-300"></i>
+                            Motto Hidup
+                        </h3>
+                        <p class="text-lg italic">"Menjadi seorang bintang tanpa harus meredupkan cahaya lain"</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#about" class="bg-yellow-400 text-pink-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors">
+                            Tentang Saya
+                        </a>
+                        <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-900 transition-colors">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm overflow-hidden">
+                            <div class="w-72 h-72 bg-gradient-to-br from-yellow-400 to-pink-500 rounded-full flex items-center justify-center overflow-hidden relative">
+
+                                <img src="WhatsApp Image 2025-10-01 at 23.08.08_54cf59fc.jpg">
+                            </div>  
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <i class="fas fa-music text-pink-900 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                        </div>
+                        <div class="absolute top-10 -left-8 w-12 h-12 bg-teal-400 rounded-full flex items-center justify-center">
+                            <i class="fas fa-star text-white star-animation"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gradient mb-4">Tentang Saya</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-teal-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            Perjalanan Hidup Saya
+                        </h3>
+                        <div class="space-y-4 text-gray-600 leading-relaxed">
+                            <p>
+                                Perkenalkan saya Marimar Situmeang, mahasiswa baru di Universitas Negeri Medan dengan jurusan Matematika dan prodi Ilmu Komputer.
+                            </p>
+                            <p>
+                                Awalnya saya berencana mengambil Teknik Pertambangan di UNMUL, namun karena jarak yang jauh, orang tua tidak mengizinkan. Rencana kedua adalah Seni Musik, tapi saya merasa suara saya kurang mendukung.
+                            </p>
+                            <p>
+                                Pada hari pendaftaran SNBP, saya iseng mengikuti teman dengan pilihan pertama Ilmu Komputer dan pilihan kedua Tata Busana. Alhamdulillah, saya lulus di pilihan pertama!
+                            </p>
+                            <p>
+                                Walaupun tidak sesuai rencana awal, saya yakin ini adalah jalan terbaik untuk saya. Saya akan menjalaninya dengan prinsip: "Apa yang sudah dimulai maka harus diselesaikan."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Hobbies Card -->
+                    <div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-6 text-white card-hover">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-heart mr-3"></i>
+                            Hobi
+                        </h4>
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="flex items-center bg-white/20 rounded-lg p-3">
+                                <i class="fas fa-microphone mr-3 text-yellow-300"></i>
+                                <span>Bernyanyi</span>
+                            </div>
+                            <div class="flex items-center bg-white/20 rounded-lg p-3">
+                                <i class="fas fa-music mr-3 text-yellow-300"></i>
+                                <span>Mendengar Musik</span>
+                            </div>
+                            <div class="flex items-center bg-white/20 rounded-lg p-3">
+                                <i class="fas fa-book mr-3 text-yellow-300"></i>
+                                <span>Membaca Novel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motto Card -->
+                    <div class="bg-gradient-to-r from-teal-500 to-blue-600 rounded-2xl p-6 text-white card-hover">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-lightbulb mr-3"></i>
+                            Filosofi Hidup
+                        </h4>
+                        <p class="text-sm mb-3 italic">"Menjadi seorang bintang tanpa harus meredupkan cahaya lain"</p>
+                        <p class="text-xs leading-relaxed">
+                            Prinsip ini menggambarkan cita-cita menjadi seseorang yang unggul tanpa harus mengecilkan atau merendahkan orang lain.
+                        </p>
+                    </div>
+
+                    <!-- Principle Card -->
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-6 text-white card-hover">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-compass mr-3"></i>
+                            Prinsip Hidup
+                        </h4>
+                        <p class="text-lg italic">"Apa yang sudah dimulai maka harus diselesaikan"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Pendidikan</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-teal-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Current Education -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-university text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Universitas Negeri Medan</h3>
+                                <p class="text-purple-600 font-semibold">Matematika - Ilmu Komputer</p>
+                                <p class="text-gray-500">2025-Sekarang</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Sedang menempuh pendidikan S1 dengan jurusan Matematika dan prodi Ilmu Komputer. Walaupun tidak sesuai rencana awal, saya yakin ini adalah jalan terbaik untuk masa depan saya.
+                        </p>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-school text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">SMA Negeri 1 Barus</h3>
+                                <p class="text-blue-600 font-semibold">Sekolah Menengah Atas</p>
+                                <p class="text-gray-500">2022-2025</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Masa SMA yang penuh prestasi, aktif dalam berbagai kegiatan seperti OSIS, olahraga voli, dan lomba musik.
+                        </p>
+                    </div>
+
+                    <!-- Junior High School -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">SMP Negeri 3 Satu Atap Andam Dewi</h3>
+                                <p class="text-green-600 font-semibold">Sekolah Menengah Pertama</p>
+                                <p class="text-gray-500">2019-2022</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Periode dimana saya mulai mengembangkan bakat bernyanyi dan sering meraih juara dalam berbagai kompetisi.
+                        </p>
+                    </div>
+
+                    <!-- Elementary School -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-child text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">SD Negeri 156486 Sijungkang 2</h3>
+                                <p class="text-yellow-600 font-semibold">Sekolah Dasar</p>
+                                <p class="text-gray-500">2013-2019</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Fondasi pendidikan yang kuat dengan prestasi akademik yang konsisten, sering meraih juara 3 besar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gradient mb-4">Prestasi</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-teal-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Academic Achievement SD -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-medal text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Juara 3 Besar SD</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Prestasi akademik yang konsisten selama masa Sekolah Dasar.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Prestasi Akademik
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Academic Achievement SMP -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-trophy text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Juara SMP</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Melanjutkan prestasi akademik yang gemilang di tingkat SMP.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Prestasi Akademik
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Vocal Solo Achievement -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden relative">
+                            <img id="vocal-photo" class="w-full h-full object-cover rounded-full hidden" alt="Foto Lomba Vocal">
+                            <div id="vocal-placeholder" class="flex flex-col items-center">
+                                <i class="fas fa-microphone text-white text-2xl mb-1"></i>
+                                <button onclick="document.getElementById('vocal-upload').click()" class="bg-white/20 text-white px-2 py-1 rounded-full text-xs hover:bg-white/30 transition-colors">
+                                    <i class="fas fa-camera mr-1"></i>Upload
+                                </button>
+                            </div>
+                            <input type="file" id="vocal-upload" accept="image/*" class="hidden">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Juara Vocal Solo</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Memenangkan lomba vocal solo antar kelas di tingkat SMP.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Seni & Musik
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Volleyball Achievement -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-volleyball-ball text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Juara 2 Voli</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Meraih juara 2 dalam pertandingan voli antar sekolah di tingkat SMA.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Olahraga
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Trio Achievement -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Juara 1 Trio</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Memenangkan lomba trio dengan kekompakan dan harmoni yang luar biasa.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Seni & Musik
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Leadership Achievement -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-bullhorn text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Ceramah & OSIS</h3>
+                    <p class="text-gray-600 text-center text-sm mb-3">
+                        Aktif berceramah di depan barisan siswa dan bergabung dengan OSIS.
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            Kepemimpinan
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Achievement -->
+            <div class="max-w-2xl mx-auto mt-12">
+                <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-8 text-white shadow-xl card-hover">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden relative">
+                            <img src="kamus-photo" class="w-full h-full object-cover rounded-full hidden" alt="Foto Proyek Kamus">
+                            <div id="c:\Users\USER\Downloads\WhatsApp Image 2025-10-01 at 23.08.09_3a39623d.jpg" class="flex flex-col items-center">
+                                <img src="c:\Users\USER\Downloads\WhatsApp Image 2025-10-01 at 23.08.09_3a39623d.jpg">
+                            </div>
+                            <input type="file" id="kamus-upload" accept="image/*" class="hidden">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Proyek Kamus Bahasa Indonesia</h3>
+                        <p class="text-lg leading-relaxed">
+                            Menyusun kamus kecil Bahasa Indonesia dari hasil review sebuah buku, menunjukkan dedikasi terhadap pembelajaran dan pengembangan literasi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Hubungi Saya</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-4"></div>
+                <p class="text-white/80 text-lg">Mari terhubung dan berkolaborasi!</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nama Lengkap</label>
+                            <input type="text" id="fullname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="nama@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Subjek</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="Subjek pesan">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Pesan</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-teal-500 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-teal-600 transition-colors">
+                            <i class="fas fa-paper-plane mr-2" ></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-white/80">marimarsitumeang@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Telepon</p>
+                                    <p class="text-white/80">082278343404</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Lokasi</p>
+                                    <p class="text-white/80">Sijungkang, Kec. Andam Dewi, Kab. Tapanuli Tengah, Sumatera Utara</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Mari Berkunjung ke Sosial Media Saya</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/marimar_s007?igsh=MW95anJlcG9sZWJmeQ==" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </a>
+                            <a href="http://tiktok.com/@marimar_s007" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-tiktok text-white text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/+6282278343404?text=Saya tertarik dengan portofolio anda!!"
+                             target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gradient-to-br from-green-800 to-green-900 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="flex items-center justify-center">
+                &copy; 2024 Marimar Situmeang. Dibuat dengan 
+                <i class="fas fa-heart text-pink-500 mx-2"></i>
+                dan 
+                <i class="fas fa-star text-yellow-400 mx-2 star-animation"></i>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!fullname || !email || !subject || !message) {
+                alert('Mohon lengkapi semua field!');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Terima kasih! Pesan Anda telah terkirim. Marimar akan segera menghubungi Anda.');
+            this.reset();
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white/95');
+            } else {
+                navbar.classList.remove('bg-white/95');
+            }
+        });
+
+        // Profile photo upload functionality
+        document.getElementById('profile-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const profilePhoto = document.getElementById('profile-photo');
+                    const placeholder = document.getElementById('profile-placeholder');
+                    
+                    profilePhoto.src = e.target.result;
+                    profilePhoto.classList.remove('hidden');
+                    placeholder.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Vocal photo upload functionality
+        document.getElementById('vocal-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const vocalPhoto = document.getElementById('vocal-photo');
+                    const placeholder = document.getElementById('vocal-placeholder');
+                    
+                    vocalPhoto.src = e.target.result;
+                    vocalPhoto.classList.remove('hidden');
+                    placeholder.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Kamus photo upload functionality
+        document.getElementById('kamus-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const kamusPhoto = document.getElementById('kamus-photo');
+                    const placeholder = document.getElementById('kamus-placeholder');
+                    
+                    kamusPhoto.src = e.target.result;
+                    kamusPhoto.classList.remove('hidden');
+                    placeholder.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'987d6076047e6112',t:'MTc1OTMzNjU2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
